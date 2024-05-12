@@ -1,0 +1,63 @@
+html {
+    font-family: 'Garamond';
+    color: white;
+    background-color: black;
+    font-size: 16pt;
+}
+
+body {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+a {
+    cursor: pointer;
+    background-color: #222222;
+    border-radius: 5%;
+    padding-left: 5pt;
+    padding-right: 5pt;
+    margin: 5pt;    
+}
+
+.title-subtext {
+    text-align: center;
+}
+
+.title-subtext > span {
+    font-style: italic;
+    font-size: 12pt;
+}
+
+h1 {
+    font-size: 32pt;
+}
+
+.game-button {
+    min-width: 64pt;
+    min-height: 64pt;
+
+    background-color: #222222;
+    margin: 4pt;
+
+    font-size: 64pt;
+    text-align: center;
+}
+/* 
+.cross {
+    background-image: "img/Cross.png";
+}
+
+.circle {
+    background-image: "img/Circle.png";
+} */
+
+.container {
+    margin: 0 auto;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3, 150px);
+    gap: 3px;
+}

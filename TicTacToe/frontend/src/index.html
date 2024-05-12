@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Tic Tac Toe</title>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <main>
+            <section>
+                <header>                    
+                    <div class="title-subtext">
+                        <h1>Kółko i Krzyżyk</h1>
+                        <span>Przygotował: Przemysław Kojs (266548)</span>
+                    </div>
+
+                    <span id="username"></span>
+                </header>
+            </section>
+
+            <section>
+                <header>
+                    <span id="username"></span>
+                </header>
+
+                <article>
+                    <div>
+                        <p id="current-turn" class="hide">
+                            <span id="clientId"></span>.
+                        </p>
+                    </div>                    
+
+                    <div class="container">
+                        <div id="board">
+                            <a class="game-button" id="x0y0" onclick="turn(0, 0)"></a>
+                            <a class="game-button" id="x1y0" onclick="turn(1, 0)"></a>
+                            <a class="game-button" id="x2y0" onclick="turn(2, 0)"></a>
+                            <a class="game-button" id="x0y1" onclick="turn(0, 1)"></a>
+                            <a class="game-button" id="x1y1" onclick="turn(1, 1)"></a>
+                            <a class="game-button" id="x2y1" onclick="turn(2, 1)"></a>
+                            <a class="game-button" id="x0y2" onclick="turn(0, 2)"></a>
+                            <a class="game-button" id="x1y2" onclick="turn(1, 2)"></a>
+                            <a class="game-button" id="x2y2" onclick="turn(2, 2)"></a>
+                        </div>
+                    </div>
+
+                    <div id="popup" class="hide">
+                        <div class="winner">
+                            <span id="winnerId"></span>
+                        </div>
+
+                        <a id="replay" onclick="restart()">Jeszcze raz!</a>
+                    </div>
+                </article>
+            </section>
+        </main>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.1.2/socket.io.min.js"></script>
+        <script src="./js/client.js"></script>
+    </body>
+</html>
